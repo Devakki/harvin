@@ -1,0 +1,114 @@
+.greenplaces-main{
+    .greenp-carbon-offset-wrapper{
+        padding: 40px 0;
+        .greenp-carbon-offset-details{
+            .greenp-carbon-img-block{
+                width: 450px;
+                margin: auto;
+                height: auto;
+                overflow: hidden;
+                margin-bottom: -2px;
+                max-width: 100%;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+            .greenp-carbon-offset-tost-details{
+                border: 2px solid $primary-two;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 20px;
+                margin-bottom: 30px;
+                text-align: center;
+                h4{
+                    font-weight: 300;
+                    font-size: 80px;
+                    color: $black;
+                    line-height: 70px;
+                    margin-bottom: 12px;
+                    text-align: center;
+                    @include media-breakpoint-down(lg) { 
+                        font-size: 70px;
+                        line-height: 60px;
+                    }
+                    @include media-breakpoint-down(md) { 
+                        font-size: 60px;
+                        line-height: 50px;
+                    }
+                    @include media-breakpoint-down(sm) { 
+                        font-size: 50px;
+                        line-height: 40px;
+                    }
+                    @include media-breakpoint-down(xs) { 
+                        font-size: 40px;
+                        line-height: 30px;
+                    }
+                }
+                h5{
+                    font-size: 20px;
+                    font-family: $font-family-ibm;
+                    font-weight: bold;
+                }
+            }
+            .greenp-taking-block{
+                text-align: center;
+                h6{
+                    font-size: 20px;
+                    font-weight: normal;
+                    color: $black;
+                    font-family: $font-family-ibm;
+                    display: inherit;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    margin-bottom: 25px;
+                    span{
+                        font-weight: bold;
+                        display: inline-block;
+                        color: $black;
+                        margin: 0 4px;
+                    }
+                    p{
+                        font-style: italic;
+                        color: $black;
+                        display: initial;
+                    }
+                }
+                .greenp-car-img{
+                    width: 76px;
+                    height: 73px;
+                    overflow: hidden;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-position: center;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+    .greenp-our-green-wrapper{
+        padding: 60px 0;
+        .greenp-our-green-block{
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .greenp-technology-slider{
+            // margin-bottom: 20px;
+            // display: unset;
+        }
+    }
+    .greenp-workwith-wrapper{
+        padding: 60px 0 100px;
+        .greenp-workwith-block{
+            text-align: center;
+        }
+    } 
+}

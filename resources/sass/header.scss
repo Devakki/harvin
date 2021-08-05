@@ -1,0 +1,465 @@
+.greenp-header-bar-wrapper{
+    padding: 30px 0px;
+    background: #000000;
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+    @include media-breakpoint-down(md) { 
+        padding: 20px 0px; 
+    }
+    .navbar{
+        padding: 0;
+        .greenp-logo-wrapper{
+            width: 288px;
+            height: auto;
+            overflow: hidden;
+            display: inline-block;
+            @include media-breakpoint-down(lg) { 
+                width: 240px;
+            }
+            @include media-breakpoint-down(md) { 
+                width: 200px;
+            }
+            @include media-breakpoint-down(sm) { 
+                width: 180px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+        .navbar-toggler{
+            padding: 0;
+            .toggler-iconsnemu{
+                width: 27px;
+                height: 2px;
+                margin-bottom: 6px;
+                background: white;
+                display: block;
+                transition: all 0.3s ease-in-out;
+                position: relative;
+                &:first-child {
+                    transform: rotate(45deg);
+                    top: 8px;
+                }
+                &:nth-of-type(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                    top: -8px;
+                    margin-bottom: 0px;
+                }
+            }
+            &.collapsed {
+                .toggler-iconsnemu {
+                    transform: rotate(0);
+                    top: 0;
+                    &:nth-of-type(2) {
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+        .navbar-collapse{
+            justify-content: flex-end;
+            .navbar-nav{
+                align-items: center;
+                @include media-breakpoint-down(md){
+                    align-items: flex-start;
+                    margin-top: 40px;
+                }
+                .nav-item{
+                    padding: 0 20px;
+                    @include media-breakpoint-down(md){
+                        padding: 0px;
+                        margin-bottom: 30px;
+                    }
+                    .nav-link{
+                        font-size: 15px;
+                        color: white;
+                        font-weight: normal;
+                        display: inline-flex;
+                        padding: 0;
+                        transition: all 0.3s ease-in-out;
+                        position: relative;
+                        // padding-bottom: 3px;
+                        &:hover{
+                            color: $white;
+                        }
+                        &::before{
+                            content: " ";
+                            position: absolute;
+                            background: $primary;
+                            width: 70%;
+                            height: 3px;
+                            bottom: 0px;
+                            margin: auto;
+                            right: 0;
+                            left: 0;
+                            -webkit-transform: scaleX(0);
+                            -ms-transform: scaleX(0);
+                            transform: scaleX(0);
+                            -webkit-transform-origin: left center;
+                            -ms-transform-origin: left center;
+                            transform-origin: left center;
+                            -webkit-transition: all .35s ease;
+                            -o-transition: all .35s ease;
+                            transition: all .35s ease;
+                        }
+                        &:hover{
+                            opacity: 1;
+                            &:before{
+                                -webkit-transform: scaleX(1);
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                    &.active{
+                        .nav-link{
+                            &:before{
+                                -webkit-transform: scaleX(1);
+                                transform: scaleX(1);
+                            }
+                        }
+                    }
+                    &.green-get-started-btn{
+                        padding: 0;
+                        margin-left: 20px;
+                        @include media-breakpoint-down(md){
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.company-profile-header{
+        background: white;
+        .navbar{
+            .greenp-Company-profile{
+                width: 150px;
+                height: 60px;
+                overflow: hidden;
+                margin-right: 20px;
+                display: inline-block;
+                // background: #954374;
+                // border-radius: 4px;
+                // padding: 5px 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                img{
+                    width: auto;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }  
+            }
+            .navbar-collapse{
+                justify-content: flex-start;
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            color: black;
+                        }
+                    }
+                }
+            }
+            .navbar-toggler{
+                .toggler-iconsnemu{
+                    background: black;
+                }
+                
+            }
+            .greenp-logo-wrapper{
+                width: 288px;
+                height: auto;
+                overflow: hidden;
+                display: inline-block;
+                // background: black;
+                // padding: 4px 8px;
+                // border-radius: 4px;
+                @include media-breakpoint-down(lg) { 
+                    width: 240px;
+                }
+                @include media-breakpoint-down(md) { 
+                    width: 200px;
+                }
+                @include media-breakpoint-down(sm) { 
+                    width: 180px;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+            .greenp-company-header{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: 100%;
+                @include media-breakpoint-down(md){
+                    flex-direction: column;
+                    align-items: unset;
+                }
+            }
+        }
+        &.th-scroll-header{
+            background: white;
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color: black !important;
+                    }
+                }
+            }
+        }
+    }
+    &.th-scroll-header{
+        position: fixed;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 2;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
+        animation: smoothScroll 0.8s forwards;
+        background: black;
+        transition: all 0.8s ease-in-out;
+        @keyframes smoothScroll {
+            0% {
+                transform: translateY(-100px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    }
+}
+.openMenu{
+    overflow: hidden;
+    padding-right: 15px;
+    .greenp-header-bar-wrapper{
+        height: 100%;
+    }
+}
+.greenp-footer-bar-wrapper{
+    background: #1D1D1F;
+    .greenp-footer-main{
+        padding: 40px 0;
+        .greenp-logo-wrapper{
+            width: 288px;
+            height: auto;
+            overflow: hidden;
+            display: inline-block;
+            @include media-breakpoint-down(lg) { 
+                width: 240px;
+            }
+            @include media-breakpoint-down(md) { 
+                width: 200px;
+            }
+            @include media-breakpoint-down(sm) { 
+                width: 180px;
+            }
+            img{
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+        .greenp-signup-form-main{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+            max-width: 100%;
+            width: 380px;
+            @include media-breakpoint-down(md) { 
+                margin-top: 20px;  
+            }
+            @include media-breakpoint-down(sm) { 
+                width: 100%;  
+            }
+            h4{
+                font-size: 20px;
+                font-weight: 700;
+                color: $white;
+                @include media-breakpoint-down(md) { 
+                    font-size: 19px;
+                }
+                @include media-breakpoint-down(sm) { 
+                    font-size: 17px; 
+                }
+                @include media-breakpoint-down(xs) { 
+                    font-size: 16px; 
+                }
+            }
+            p{
+                font-size: 16px;
+                font-weight: normal;
+                color: $white;
+                font-family: $font-family-ibm;
+                margin-bottom: 30px;
+                margin-top: 5px;
+                line-height: normal;
+                @include media-breakpoint-down(sm) { 
+                    font-size: 15px; 
+                }
+                @include media-breakpoint-down(xs) { 
+                    font-size: 14px;
+                }
+            }
+            .greenp-signup-form{
+                form{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    .form-group{
+                        margin-bottom: 0;
+                        width: calc(100% - 125px);
+                        .form-control{
+                            background: #fff;
+                            border: 1px solid #666666;
+                            padding: 15px;
+                            height: 51px;
+                            outline: none;
+                            box-shadow: none;
+                            transition: all 0.3s ease-in-out;
+                            border-radius: 0;
+                            font-size: 15px;
+                            &:focus{
+                                border-color: $primary;
+                            }
+                        }
+                    }
+                    .greenplace-theme-btn{
+                        height: 51px;
+                    }
+                }
+            }
+        }
+        .greenp-company-profile-footer{
+            margin-top: 30px;
+            h4{
+                font-size: 20px;
+                font-weight: 700;
+                color: $white;
+                margin-bottom: 20px;
+                @include media-breakpoint-down(md) { 
+                    font-size: 19px;
+                }
+                @include media-breakpoint-down(sm) { 
+                    font-size: 17px; 
+                }
+                @include media-breakpoint-down(xs) { 
+                    font-size: 16px; 
+                }
+            }
+        }
+        .greenp-page-link-and-social-link{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            @include media-breakpoint-down(sm) { 
+                margin-top: 30px;
+            }
+            @include media-breakpoint-down(xs) { 
+                flex-wrap: wrap;
+            }
+            h5{
+                font-size: 17px;
+                font-weight: 700;
+                color: $white;
+                font-family: $font-family-ibm;
+                margin-bottom: 20px;
+            }
+            ul{
+                display: inline-block;
+                li{
+                    margin-bottom: 20px;
+                    a{
+                        display: inline-block;
+                        font-size: 15px;
+                        font-weight: normal;
+                        color: $white;
+                        font-family: $font-family-ibm;
+                        transition: all 0.3s ease-in-out;
+                        i{
+                            font-size: 18px;
+                            transition: all 0.3s ease-in-out;
+                            color: $white;
+                        }
+                        &:hover{
+                            color: $primary;
+                            i{
+                                color: $primary;
+                            }  
+                        }
+                    }
+                }
+            }
+            .greenplane-towork-logo{
+                display: block;
+                @include  size480{ 
+                    margin: auto;
+                    margin-top: 30px;
+                }
+                a{
+                    display: block;  
+                    width: 120px;
+                    height: 100%;
+                    overflow: hidden;
+                    @include  size480{ 
+                        width: 100px;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+            .social-link{
+                @include  size480{ 
+                    width: 50%;
+                }
+            }
+        }
+    }
+    .greenp-copy-rights-footer-bar{
+        background: #333333;
+        padding: 15px 0;
+        .greenp-footer-link{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            @include media-breakpoint-down(md){
+                text-align: unset;
+            }
+            @include media-breakpoint-down(sm){
+                flex-direction: column;
+                text-align: center;
+            }
+            li{
+                font-size: 16px;
+                font-weight: normal;
+                color: rgba(255, 255, 255, 0.5);
+                display: inline-block;
+                margin: 0 15px;
+                a{
+                    font-size: 16px;
+                    font-weight: normal;
+                    color: rgba(255, 255, 255, 0.5);
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

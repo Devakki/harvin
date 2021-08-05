@@ -1,0 +1,50 @@
+.greenplaces-main{
+    .greenplaces-terms-page{
+        padding: 170px 0 100px;
+        @include media-breakpoint-down(lg) { 
+            padding: 150px 0 100px;
+        }
+        @include media-breakpoint-down(md) { 
+            padding: 110px 0 100px;
+        }
+        .greenplaces-terms-wrapper{
+            h5{
+                font-family: $font-family-ibm;
+                font-size: 18px;
+                color: #070707;
+                line-height: 25px;
+                margin-bottom: 10px;
+                font-weight: bold;
+                padding-top: 15px;
+                @include media-breakpoint-down(md) { 
+                    font-size: 17px;
+                }
+                @include media-breakpoint-down(sm) { 
+                    font-size: 16px;
+                }
+            }
+            li{
+                font-family: $font-family-ibm;
+                font-size: 16px;
+                color: #070707;
+                line-height: 25px;
+                margin-bottom: 15px;
+                @include media-breakpoint-down(md) { 
+                    font-size: 15px;
+                }
+                @include media-breakpoint-down(sm) { 
+                    font-size: 14px;
+                }
+            }
+            ul{
+                margin: unset;
+                line-height: unset;
+                list-style-type: unset;
+                padding-left: 20px;
+            }
+            ol{
+                padding-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+// Body
+
+// Typography
+$font-family-poppins: 'Poppins', sans-serif;
+$font-family-ibm: 'IBM Plex Sans', sans-serif;
+$font-family-Roboto: 'Roboto', sans-serif;
+
+// Colors
+$black: #070707;
+$white:#fff;
+$primary:#C9D381;
+$primary-two: #67995F;
+ 
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins/_breakpoints";
+
+@mixin  size480 {
+    @media (max-width: 480px){
+        @content;
+    }
+}
+@mixin  size375 {
+    @media (max-width: 375px){
+        @content;
+    }
+}

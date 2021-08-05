@@ -1,0 +1,1225 @@
+.greenplaces-main{
+    .greenplaces-banner-wrapper{
+        background: #000000;
+        min-height: 75vh;
+        display: flex;
+        @include media-breakpoint-down(xs) { 
+            min-height: 95vh;  
+        }
+        .container{
+            position: relative;
+            height: auto;
+        }
+        .greenp-banner-details{
+            padding: 200px 0;
+            z-index: 1;
+            position: relative;
+            @include media-breakpoint-down(xs) { 
+                height: 92vh;
+                display: inline-flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+                padding: 100px 0 50px;
+            }
+            .greenp-page-title-main{
+                color: $white;
+            }
+            .greenp-paragraph-text{
+                color: $white;
+            }
+            .greenp-calculate-block{
+                margin-top: 35px;
+                display: inline-flex;
+                flex-direction: column;
+                text-align: center;
+                @include media-breakpoint-down(md) { 
+                    margin-top: 25px;
+                }
+                .greenp-paragraph-text{
+                    margin-top: 20px;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .greenp-banner-img-cover{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            .greenp-banner-img{
+                width: 420px;
+                height: 100%;
+                overflow: hidden;
+                @include media-breakpoint-down(sm) { 
+                    width: 400px;
+                }
+                @include media-breakpoint-down(xs) { 
+                    width: 350px;
+                }
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+        &.greenp-aboutus-banner-section{
+            .container-fluid{
+                position: relative;
+                height: auto;
+            }
+            .greenp-banner-img-cover{
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                z-index: 0;
+                .greenp-banner-img{
+                    width: 750px;
+                    height: 100%;
+                    overflow: hidden;
+                    max-width: 100%;
+                    @include media-breakpoint-down(lg) { 
+                        width: 650px;
+                    }
+                    @include media-breakpoint-down(md) { 
+                        width: 550px;
+                    }
+                    @include media-breakpoint-down(sm) { 
+                        width: 480px;
+                    }
+                    @include media-breakpoint-down(xs) { 
+                        width: 400px;
+                    }
+                    img{
+                        width: 100%;
+                        height: auto;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+            }
+            .greenp-banner-details{
+                padding-top: 240px;
+                @include media-breakpoint-down(lg) { 
+                    padding-top: 200px;
+                }
+                @include media-breakpoint-down(md) { 
+                    padding: 150px 0;
+                }
+            }
+        }
+    }
+    .greenn-brand-section-main{
+        padding: 20px 0 20px;
+        background-color: #F2F2F2;
+        .greenp-subtitle-small{
+            font-weight: 500;
+            color: #9c9c9c;
+        }
+        .greenn-brand-wrapppe{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            flex-wrap: wrap;
+            @include media-breakpoint-down(xs){
+                // justify-content: flex-start;
+                align-items: center;
+            }
+            .greenn-brand-box{
+                overflow: hidden;
+                margin: 20px 7px;
+                width: 170px;
+                height: 100%;
+                overflow: hidden;
+                @include media-breakpoint-down(lg) { 
+                    width: 150px;
+                }
+                @include media-breakpoint-down(md) { 
+                    width: 120px;
+                }
+                @include media-breakpoint-down(xs) { 
+                    width: 19%;
+                    margin: 0;
+                    margin-top: 10px;
+                    margin-right: 20px;
+                }
+                // width: 150px;
+                // height: 150px;
+                // border-radius: 1000px;
+                // background-color: #F2F2F2;
+                // border: 1px solid $black;
+                // display: flex;
+                // justify-content: center;
+                // align-items: center;
+                // text-align: center;
+                // @include media-breakpoint-down(lg) { 
+                //     width: 130px;
+                //     height: 130px;
+                // }
+                // @include media-breakpoint-down(md) { 
+                //     width: 120px;
+                //     height: 120px;
+                // }
+                // @include media-breakpoint-down(sm) { 
+                //     width: 100px;
+                //     height: 100px;
+                // }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+        }
+    }
+    .green-carbonzero-wrapper-main{
+        padding: 130px 0 90px;
+        background: white;
+        @include media-breakpoint-down(lg) { 
+            padding: 90px 0 90px;
+        } 
+        @include media-breakpoint-down(md) { 
+            padding: 50px 0;
+        } 
+        .green-carbonzero-details{
+            .greenp-subtitle{
+                margin-bottom: 40px;
+                text-align: center;
+                @include media-breakpoint-down(lg) { 
+                    margin-bottom: 30px; 
+                } 
+            }
+            #lottie-three{
+                display: block;
+                @include media-breakpoint-down(xs) { 
+                    display: none; 
+                } 
+            }
+            .greenp-carbon-zero-mobile-view{
+                display: none;
+                @include media-breakpoint-down(xs) { 
+                    display: block; 
+                }
+                .greenp-carbon-zero-details{
+                    text-align: center;
+                    margin-top: 50px;
+                    h4{
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: black;
+                        margin-bottom: 15px;
+                    }
+                    p{
+                        font-size: 14px;
+                        font-weight: normal;
+                        color: black;
+                        margin-top: 15px;
+                        line-height: 24px;
+                    }
+                    ul{
+                        display: flex;
+                        justify-content: space-evenly;
+                        margin: 21px 0;
+                        li{
+                            height: auto;
+                            overflow: hidden;
+                            width: 55px;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .green-carbonzero-produces{
+            position: relative;
+            .green-carbonzero-text{
+                text-align: center;
+                width: 630px;
+                max-width: 100%;
+                margin: auto;
+                margin-bottom: 35px;
+                opacity: 0;
+                .greenp-subtitle-small{
+                    margin-bottom: 10px;
+                }
+                &.step_2{
+                    position: absolute;
+                    right: 0;
+                    left: 0;
+                    top: 0;            
+                }
+            }
+            .green-carbonzer-produces-img{
+                width: 100%;
+                height: auto;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-position: center;
+                    object-fit: contain;
+                }
+            }
+        }
+        &.animation-demo-section{
+            .greenp-steps-animation-block{
+                .greenp-steps-icons-wrapper{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    .greenp-steps-icons-list{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 48%;
+                        align-items: center;
+                        margin-bottom: 12px;
+                        .greenp-steps-one-and-two{
+                            width: 70px;
+                            height: 70px;
+                            overflow: hidden;
+                            margin-bottom: 100px;
+                            opacity: 0;
+                            @include media-breakpoint-down(md) { 
+                                width: 60px;
+                                height: 60px;
+                                margin-bottom: 80px;
+                            }
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+                        .greenp-steps-icons-list-wrapper{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            width: 100%;
+                            .greenp-steps-icons{
+                                width: auto;
+                                height: 65px;
+                                overflow: hidden;
+                                margin-right: 25px;
+                                opacity: 0;
+                                @include media-breakpoint-down(md) { 
+                                    height: 40px;
+                                    margin-right: 20px;
+                                } 
+                                @include media-breakpoint-down(xs) { 
+                                    margin-right: 15px;
+                                } 
+                                img{
+                                    width: 100%;
+                                    height: 100%;
+                                    object-position: center;
+                                    object-fit: contain;
+                                }
+                            }
+                        }
+                        .greenp-steps-number-two{
+                            width: 70px;
+                            height: 70px;
+                            overflow: hidden;
+                            margin-bottom: 100px;
+                            opacity: 0;
+                            @include media-breakpoint-down(md) { 
+                                width: 60px;
+                                height: 60px;
+                                margin-bottom: 80px;
+                            }
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-fit: contain;
+                                object-position: center;
+                            }
+                        }
+                        &.greenp-steps-two-block{
+                            .greenp-steps-icons-list-wrapper{
+                                justify-content: flex-end;
+                                .greenp-steps-icons{
+                                    margin-right: 0px;
+                                    margin-left: 20px;
+                                    @include media-breakpoint-down(xs) { 
+                                        margin-left: 15px;
+                                    } 
+                                }
+                            }
+                        }
+                    }
+                }
+                .grennp-border-line-img{
+                    width: 100%;
+                    height: 94px;
+                    overflow: hidden; 
+                    @include media-breakpoint-down(md) { 
+                        height: 75px;
+                    }
+                    @include  size480{ 
+                        height: auto;
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                        object-position: center;
+                    }
+                }
+                &.greenp-steps-active{
+                    .green-carbonzero-produces{
+                        .green-carbonzero-text{
+                            &.step_1{
+                                animation: ani-stepone-details 10s linear forwards;
+                                -webkit-animation: ani-stepone-details 10s linear forwards;
+                            }
+                            @keyframes ani-stepone-details {
+                                0%{
+                                    opacity: 1; 
+                                }
+                                10%{
+                                    opacity: 1; 
+                                }
+                                20%{
+                                    opacity: 1; 
+                                }
+                                30%{
+                                    opacity: 1; 
+                                }
+                                40%{
+                                    opacity: 1; 
+                                }
+                                45%{
+                                    opacity: 0; 
+                                }
+                                50%{
+                                    opacity: 0; 
+                                }
+                                100%{
+                                    opacity: 0; 
+                                }
+                            }
+                            &.step_2{
+                                animation: ani-steptwo-details 10s linear forwards;
+                                -webkit-animation: ani-steptwo-details 10s linear forwards;
+                            }
+                            @keyframes ani-steptwo-details {
+                                0%{
+                                    opacity: 0; 
+                                }
+                                10%{
+                                    opacity: 0; 
+                                }
+                                20%{
+                                    opacity: 0; 
+                                }
+                                30%{
+                                    opacity: 0; 
+                                }
+                                40%{
+                                    opacity: 1; 
+                                }
+                                45%{
+                                    opacity: 1; 
+                                }
+                                50%{
+                                    opacity: 1; 
+                                }
+                                100%{
+                                    opacity: 1; 
+                                }
+                            }
+                        }
+                    }
+                    .greenp-steps-icons-wrapper{
+                        .greenp-steps-one-and-two{
+                            animation: animation-number-one-icon 10s linear forwards;
+                            -webkit-animation: animation-number-one-icon 10s linear forwards;
+                        } 
+                        @keyframes animation-number-one-icon {
+                            0%{
+                                opacity: 0; 
+                            }
+                            10%{
+                                opacity: 0.5; 
+                            }
+                            20%{
+                                opacity: 1; 
+                            }
+                            100%{
+                                opacity: 1; 
+                            }
+                        }
+                        .greenp-steps-icons-list-wrapper{
+                            .greenp-steps-icons{
+                                &.car-icon{
+                                    animation: car-icon-ani 10s linear forwards;
+                                    -webkit-animation: car-icon-ani 10s linear forwards;
+                                }
+                                @keyframes car-icon-ani {
+                                    0%{
+                                        opacity: 0;
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    10%{
+                                        opacity: 1; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    20%{
+                                        opacity: 1; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    30%{
+                                        opacity: 1; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    40%{
+                                        opacity: 1;
+                                        transform: translate(0px, 55px);  
+                                    }
+                                    45%{
+                                        opacity: 1;
+                                        transform: translate(0px, 40px);
+                                    }
+                                    50%{
+                                        opacity: 1;
+                                        transform: translate(0px, 45px);
+                                    }
+                                    60%{
+                                        opacity: 1;
+                                        transform: translate(0px, 55px); 
+                                    }
+                                    70%{
+                                        opacity: 1;
+                                        transform: translate(0px, 55px);  
+                                    }
+                                    100%{
+                                        opacity: 1;
+                                        transform: translate(0px, 0px);
+                                    }
+                                }
+                                &.idea-icon{
+                                    animation: idea-icon-ani 10s linear forwards;
+                                    -webkit-animation: idea-icon-ani 10s linear forwards;
+                                }
+                                @keyframes idea-icon-ani {
+                                    0%{
+                                        opacity: 0;
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    10%{
+                                        opacity: 0; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    20%{
+                                        opacity: 1; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    30%{
+                                        opacity: 1; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    40%{
+                                        opacity: 1;
+                                        transform: translate(0px, 45px);
+                                    }
+                                    45%{
+                                        opacity: 1;
+                                        transform: translate(0px, 30px);
+                                    }
+                                    50%{
+                                        opacity: 1;
+                                        transform: translate(0px, 35px);
+                                    }
+                                    60%{
+                                        opacity: 1;
+                                        transform: translate(0px, 45px);
+                                    }
+                                    70%{
+                                        opacity: 1;
+                                        transform: translate(0px, 45px);
+                                    }
+                                    100%{
+                                        opacity: 1;
+                                        transform: translate(0px, 0px);
+                                    }
+                                }
+                                &.box-icon{
+                                    animation: box-icon-ani 10s linear forwards;
+                                    -webkit-animation: box-icon-ani 10s linear forwards;
+                                }
+                                @keyframes box-icon-ani {
+                                    0%{
+                                        opacity: 0;
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    10%{
+                                        opacity: 0; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    20%{
+                                        opacity: 0; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    30%{
+                                        opacity: 1; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    40%{
+                                        opacity: 1;
+                                        transform: translate(0px, 30px);
+                                        -webkit-transform: translate(0px, 30px);
+                                        -moz-transform: translate(0px, 30px);
+                                        -ms-transform: translate(0px, 30px);
+                                        -o-transform: translate(0px, 30px);
+                                    }
+                                    45%{
+                                        opacity: 1;
+                                        transform: translate(0px, 15px);
+                                        -webkit-transform: translate(0px, 15px);
+                                        -moz-transform: translate(0px, 15px);
+                                        -ms-transform: translate(0px, 15px);
+                                        -o-transform: translate(0px, 15px);
+                                    }
+                                    50%{
+                                        opacity: 1;
+                                        transform: translate(0px, 25px);
+                                        -webkit-transform: translate(0px, 25px);
+                                        -moz-transform: translate(0px, 25px);
+                                        -ms-transform: translate(0px, 25px);
+                                        -o-transform: translate(0px, 25px);
+                                    }
+                                    60%{
+                                        opacity: 1;
+                                        transform: translate(0px, 30px);
+                                        -webkit-transform: translate(0px, 30px);
+                                        -moz-transform: translate(0px, 30px);
+                                        -ms-transform: translate(0px, 30px);
+                                        -o-transform: translate(0px, 30px);
+                                    }
+                                    70%{
+                                        opacity: 1;
+                                        transform: translate(0px, 30px);
+                                        -webkit-transform: translate(0px, 30px);
+                                        -moz-transform: translate(0px, 30px);
+                                        -ms-transform: translate(0px, 30px);
+                                        -o-transform: translate(0px, 30px);
+                                    }
+                                    100%{
+                                        opacity: 1;
+                                        transform: translate(0px, 0px);
+                                    }
+                                }
+                                &.plane-icon{
+                                    animation: plane-icon-ani 10s linear forwards;
+                                    -webkit-animation: plane-icon-ani 10s linear forwards;
+                                }
+                                @keyframes plane-icon-ani {
+                                    0%{
+                                        opacity: 0;
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    10%{
+                                        opacity: 0; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    20%{
+                                        opacity: 0; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    30%{
+                                        opacity: 0; 
+                                        transform: translate(0px, 0px); 
+                                    }
+                                    40%{
+                                        opacity: 1;
+                                        transform: translate(0px, 15px);
+                                        -webkit-transform: translate(0px, 15px);
+                                        -moz-transform: translate(0px, 15px);
+                                        -ms-transform: translate(0px, 15px);
+                                        -o-transform: translate(0px, 15px);
+                                    }
+                                    45%{
+                                        opacity: 1;
+                                        transform: translate(0px, 5px);
+                                        -webkit-transform: translate(0px, 5px);
+                                        -moz-transform: translate(0px, 5px);
+                                        -ms-transform: translate(0px, 5px);
+                                        -o-transform: translate(0px, 5px);
+                                    }
+                                    50%{
+                                        opacity: 1;
+                                        transform: translate(0px, 10px);
+                                        -webkit-transform: translate(0px, 10px);
+                                        -moz-transform: translate(0px, 10px);
+                                        -ms-transform: translate(0px, 10px);
+                                        -o-transform: translate(0px, 10px);
+                                    }
+                                    60%{
+                                        opacity: 1;
+                                        transform: translate(0px, 15px);
+                                        -webkit-transform: translate(0px, 15px);
+                                        -moz-transform: translate(0px, 15px);
+                                        -ms-transform: translate(0px, 15px);
+                                        -o-transform: translate(0px, 15px);
+                                    }
+                                    70%{
+                                        opacity: 1;
+                                        transform: translate(0px, 15px);
+                                        -webkit-transform: translate(0px, 15px);
+                                        -moz-transform: translate(0px, 15px);
+                                        -ms-transform: translate(0px, 15px);
+                                        -o-transform: translate(0px, 15px);
+                                    }
+                                    100%{
+                                        opacity: 1;
+                                        transform: translate(0px, 0px);
+                                    }
+                                }
+                                &.tree-icon{
+                                    animation: tree-icon-ani 10s linear forwards;
+                                    -webkit-animation: tree-icon-ani 10s linear forwards;
+                                }
+                                @keyframes tree-icon-ani {
+                                    0%{
+                                        opacity: 0
+                                    }
+                                    10%{
+                                        opacity: 0;
+                                    }
+                                    20%{
+                                        opacity: 0;
+                                    }
+                                    30%{
+                                        opacity: 0;
+                                    }
+                                    40%{
+                                        opacity: 0;
+                                    }
+                                    50%{
+                                        opacity: 1;
+                                        transform: translate(0px, -10px);
+                                        -webkit-transform: translate(0px, -10px);
+                                        -moz-transform: translate(0px, -10px);
+                                        -ms-transform: translate(0px, -10px);
+                                        -o-transform: translate(0px, -10px);
+                                    }
+                                    100%{
+                                        opacity: 1;
+                                        transform: translate(0px, 0px);
+                                        -webkit-transform: translate(0px, 0px);
+                                        -moz-transform: translate(0px, 0px);
+                                        -ms-transform: translate(0px, 0px);
+                                        -o-transform: translate(0px, 0px);
+                                    }
+                                }
+                                &.windmill-icon{
+                                    animation: windmill-icon-ani 10s linear forwards;
+                                    -webkit-animation: windmill-icon-ani 10s linear forwards;
+                                }
+                                @keyframes windmill-icon-ani {
+                                    0%{
+                                        opacity: 0;
+                                    }
+                                    10%{
+                                        opacity: 0; 
+                                    }
+                                    20%{
+                                        opacity: 0; 
+                                    }
+                                    30%{
+                                        opacity: 0; 
+                                    }
+                                    40%{
+                                        opacity: 0;
+                                    }
+                                    50%{
+                                        opacity: 0;
+                                    }
+                                    60%{
+                                        opacity: 1;
+                                        transform: translate(0px, -30px);
+                                        -webkit-transform: translate(0px, -30px);
+                                        -moz-transform: translate(0px, -30px);
+                                        -ms-transform: translate(0px, -30px);
+                                        -o-transform: translate(0px, -30px);
+                                    }
+                                    100%{
+                                        opacity: 1;
+                                        transform: translate(0px, 0px);
+                                        -webkit-transform: translate(0px, 0px);
+                                        -moz-transform: translate(0px, 0px);
+                                        -ms-transform: translate(0px, 0px);
+                                        -o-transform: translate(0px, 0px);
+                                    }
+                                }
+                                &.solar-panel-icon{
+                                    animation: solar-icon-ani 10s linear forwards;
+                                    -webkit-animation: solar-icon-ani 10s linear forwards;
+                                }
+                                @keyframes solar-icon-ani {
+                                    0%{
+                                        opacity: 0;
+                                    }
+                                    10%{
+                                        opacity: 0; 
+                                    }
+                                    20%{
+                                        opacity: 0; 
+                                    }
+                                    30%{
+                                        opacity: 0; 
+                                    }
+                                    40%{
+                                        opacity: 0;
+                                    }
+                                    50%{
+                                        opacity: 0;
+                                    }
+                                    60%{
+                                        opacity: 0;
+                                    }
+                                    70%{
+                                        opacity: 1;
+                                        transform: translate(0px, -45px);
+                                        -webkit-transform: translate(0px, -45px);
+                                        -moz-transform: translate(0px, -45px);
+                                        -ms-transform: translate(0px, -45px);
+                                        -o-transform: translate(0px, -45px);
+}
+                                    100%{
+                                        opacity: 1;
+                                        transform: translate(0px, -0px);
+                                        -webkit-transform: translate(0px, -0px);
+                                        -moz-transform: translate(0px, -0px);
+                                        -ms-transform: translate(0px, -0px);
+                                        -o-transform: translate(0px, -0px);
+                                    }
+                                }
+                                &.electricity-icon{
+                                    animation: electricity-icon-ani 10s linear forwards;
+                                    -webkit-animation: electricity-icon-ani 10s linear forwards;
+                                }
+                                @keyframes electricity-icon-ani {
+                                    0%{
+                                        opacity: 0;
+                                    }
+                                    10%{
+                                        opacity: 0; 
+                                    }
+                                    20%{
+                                        opacity: 0; 
+                                    }
+                                    30%{
+                                        opacity: 0; 
+                                    }
+                                    40%{
+                                        opacity: 0;
+                                    }
+                                    50%{
+                                        opacity: 0;
+                                    }
+                                    60%{
+                                        opacity: 0;
+                                    }
+                                    70%{
+                                        opacity: 0;
+                                    }
+                                    75%{
+                                        opacity: 1;
+                                        transform: translate(0px, -30px);
+                                        -webkit-transform: translate(0px, -30px);
+                                        -moz-transform: translate(0px, -30px);
+                                        -ms-transform: translate(0px, -30px);
+                                        -o-transform: translate(0px, -30px);
+                                    }
+                                    100%{
+                                        opacity: 1;
+                                        transform: translate(0px, 0px);
+                                        -webkit-transform: translate(0px, 0px);
+                                        -moz-transform: translate(0px, 0px);
+                                        -ms-transform: translate(0px, 0px);
+                                        -o-transform: translate(0px, 0px);
+                                    }
+                                }
+                            }
+                        }
+                        .greenp-steps-number-two{
+                            animation: animation-number-tow-icon 10s linear forwards;
+                            -webkit-animation: animation-number-tow-icon 10s linear forwards;
+                        }
+                        @keyframes animation-number-tow-icon {
+                            0%{
+                                opacity: 0; 
+                            }
+                            10%{
+                                opacity: 0; 
+                            }
+                            20%{
+                                opacity: 0; 
+                            }
+                            30%{
+                                opacity: 0; 
+                            }
+                            40%{
+                                opacity: 0.5; 
+                            }
+                            50%{
+                                opacity: 1; 
+                            }
+                            60%{
+                                opacity: 1; 
+                            }
+                            70%{
+                                opacity: 1; 
+                            }
+                            100%{
+                                opacity: 1; 
+                            }
+                        }
+                    }
+                    .grennp-border-line-img{
+                        animation: line-animation 10s linear forwards;
+                        -webkit-animation: line-animation 10s linear forwards;
+                    }
+                    @keyframes line-animation {
+                        0%{
+                            transform: rotate(0deg);
+                            -webkit-transform: rotate(0deg);
+                            -moz-transform: rotate(0deg);
+                            -ms-transform: rotate(0deg);
+                            -o-transform: rotate(0deg);
+                        }
+                        10%{
+                            transform: rotate(0deg);
+                            -webkit-transform: rotate(0deg);
+                            -moz-transform: rotate(0deg);
+                            -ms-transform: rotate(0deg);
+                            -o-transform: rotate(0deg);
+                        }
+                        20%{
+                            transform: rotate(0deg);
+                            -webkit-transform: rotate(0deg);
+                            -moz-transform: rotate(0deg);
+                            -ms-transform: rotate(0deg);
+                            -o-transform: rotate(0deg);
+                        }
+                        30%{
+                            transform: rotate(0deg);
+                            -webkit-transform: rotate(0deg);
+                            -moz-transform: rotate(0deg);
+                            -ms-transform: rotate(0deg);
+                            -o-transform: rotate(0deg);
+                        }
+                        40%{
+                            transform: rotate(-8deg);
+                            -webkit-transform: rotate(-8deg);
+                            -moz-transform: rotate(-8deg);
+                            -ms-transform: rotate(-8deg);
+                            -o-transform: rotate(-8deg);
+                        }
+                        45%{
+                            transform: rotate(-6deg);
+                            -webkit-transform: rotate(-6deg);
+                            -moz-transform: rotate(-6deg);
+                            -ms-transform: rotate(-6deg);
+                            -o-transform: rotate(-6deg);
+                        }
+                        50%{
+                            transform: rotate(-7deg);
+                            -webkit-transform: rotate(-7deg);
+                            -moz-transform: rotate(-7deg);
+                            -ms-transform: rotate(-7deg);
+                            -o-transform: rotate(-7deg);
+                        }
+                        60%{
+                            transform: rotate(-8deg);
+                            -webkit-transform: rotate(-8deg);
+                            -moz-transform: rotate(-8deg);
+                            -ms-transform: rotate(-8deg);
+                            -o-transform: rotate(-8deg);
+                        }
+                        70%{
+                            transform: rotate(-8deg);
+                            -webkit-transform: rotate(-8deg);
+                            -moz-transform: rotate(-8deg);
+                            -ms-transform: rotate(-8deg);
+                            -o-transform: rotate(-8deg);
+                        }
+                        100%{
+                            transform: rotate(0deg);
+                            -webkit-transform: rotate(0deg);
+                            -moz-transform: rotate(0deg);
+                            -ms-transform: rotate(0deg);
+                            -o-transform: rotate(0deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .greenp-invest-section{
+        padding: 80px 0;
+        @include media-breakpoint-down(lg) { 
+            padding: 60px 0;
+        } 
+        @include media-breakpoint-down(md) { 
+            padding: 40px 0;
+        } 
+        .greenp-invest-text{
+            text-align: center;
+            margin-bottom: 60px;
+            @include media-breakpoint-down(md) { 
+                margin-bottom: 40px; 
+            } 
+        }
+        .green-projects-details-wrapper{
+            .nav{
+                justify-content: space-between;
+                margin-bottom: 25px;
+                .nav-item{
+                    width: 32.5%;
+                    text-align: center;
+                    .nav-link{
+                        font-size: 16px;
+                        font-weight: normal;
+                        color: $black;
+                        line-height: normal;
+                        border: 1px solid $black;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 12px;
+                        background: white;
+                        transition: all 0.3s ease-in-out;
+                        // white-space: nowrap;
+                        // overflow: hidden;
+                        // text-overflow: ellipsis;
+                        // display: inherit;
+                        @include media-breakpoint-down(md) { 
+                            font-size: 15px;
+                            height: 100%; 
+                        } 
+                        @include media-breakpoint-down(xs) { 
+                            font-size: 14px; 
+                        } 
+                        &.active{
+                            background: $black;
+                            color: white;
+                        }
+                        &:hover{
+                            color: white;
+                            background: $black;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+            .tab-content{
+                .tab-pane{
+                    .green-projects-step-list{
+                        background: white;
+                        border-radius: 12px;
+                        width: 100%;
+                        height: 600px;
+                        overflow: hidden;
+                        position: relative;
+                        @include media-breakpoint-down(lg) { 
+                            height: 550px; 
+                        } 
+                        @include media-breakpoint-down(md) { 
+                            height: 500px; 
+                        } 
+                        @include media-breakpoint-down(sm) { 
+                            height: 420px; 
+                        } 
+                        @include media-breakpoint-down(xs) { 
+                            height: 360px; 
+                        } 
+                        .green-projects-step-img{
+                            width: 100%;
+                            height: 100%;
+                            img{
+                                width: 100%;
+                                height: 100%;
+                                object-position: center;
+                                object-fit: cover;
+                            }
+                        }
+                        .green-projects-step-details{
+                            background: white;
+                            width: 480px;
+                            max-width: 100%;
+                            padding: 20px;
+                            position: absolute;
+                            left: 20px;
+                            top: 20px;
+                            @include media-breakpoint-down(sm) { 
+                                width: 380px
+                            } 
+                            @include media-breakpoint-down(xs) { 
+                                width: 300px
+                            } 
+                            .greenp-readmore-btn{
+                                color: $primary-two;
+                                i{
+                                    color: $primary-two;
+                                }
+                            }
+                            .greenp-paragraph-text{
+                                display: -webkit-box;
+                                -webkit-line-clamp: 6;
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .greenp-benefits-section{
+        padding: 30px 0;
+        margin-bottom: 50px;
+        .greenp-benefits-title{
+            text-align: center;
+            margin-bottom: 70px;
+            @include media-breakpoint-down(sm) { 
+                margin-bottom: 45px; 
+            } 
+        }
+        .greenp-benefits-details-list{
+            position: relative;
+            .col-xl-9, .col-xl-8, .col-xl-7, .col-xl-6, .col-xl-5, .col-xl-4, .col-xl-3, .col-xl-2, .col-xl-1, .col-lg, .col-lg-auto, .col-lg-12, .col-lg-11, .col-lg-10, .col-lg-9, .col-lg-8, .col-lg-7, .col-lg-6, .col-lg-5, .col-lg-4, .col-lg-3, .col-lg-2, .col-lg-1, .col-md, .col-md-auto, .col-md-12, .col-md-11, .col-md-10, .col-md-9, .col-md-8, .col-md-7, .col-md-6, .col-md-5, .col-md-4, .col-md-3, .col-md-2, .col-md-1, .col-sm, .col-sm-auto, .col-sm-12, .col-sm-11, .col-sm-10, .col-sm-9, .col-sm-8, .col-sm-7, .col-sm-6, .col-sm-5, .col-sm-4, .col-sm-3, .col-sm-2, .col-sm-1, .col, .col-auto, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
+                padding-right: 10px;
+                padding-left: 10px;
+                @include media-breakpoint-down(xs) { 
+                    padding-right: 15px;
+                    padding-left: 15px;  
+                }
+            }
+            .greenp-benefits-details{
+                margin-bottom: 40px;
+                background: #EDEDED;
+                border-radius: 12px;
+                overflow: hidden;
+                height: calc(100% - 40px);
+                .greenp-benefits-images-box{
+                    width: 100%;
+                    height: 290px;
+                    overflow: hidden;
+                    position: relative;
+                    display: block;
+                    .greenp-client-img{
+                        width: 100%;
+                        height: 100%;
+                        position: relative;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                            object-position: top;
+                        }
+                        &::before {
+                            position: absolute;
+                            right: 0;
+                            left: 0;
+                            top: 0;
+                            bottom: 0;
+                            background: #0000001a;
+                            content: '';
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .green-place-image-logo{
+                        width: 80px;
+                        height: auto;
+                        overflow: hidden;
+                        position: absolute;
+                        left: 15px;
+                        bottom: 15px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
+                            object-position: center;
+                        }
+                    }
+                }
+                .greenp-client-details{
+                    padding: 15px;
+                    .greenp-subtitle-small{
+                        margin-bottom: 9px;
+                        display: inline-block;
+                        &:hover{
+                            color: black;
+                        }
+                    }
+                    .greenp-paragraph-text{
+                        margin-bottom: 0px;
+                        .greenp-readmore-btn{
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .greenp-client-logos-wrapper{
+        padding: 50px 0;
+        .greenp-client-logos-list{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+            justify-content: center;
+            @include  size480{ 
+                justify-content: center;
+            }
+            .greenp-client-logos{
+                width: 120px;
+                height: 120px;
+                border-radius: 1000px;
+                overflow: hidden;
+                padding: 20px;
+                // background: #EDEDED;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 8px;
+                margin-bottom: 16px;
+                @include  size480{ 
+                    width: 100px;
+                    height: 100px;
+                }
+                @include  size375{ 
+                    width: 80px;
+                    height: 80px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-position: center;
+                    object-fit: contain;
+                }
+            }
+        }
+        .greenp-directory-wrapper{
+            padding: 40px 0;
+            text-align: center;
+            .greenp-subtitle-small{
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
