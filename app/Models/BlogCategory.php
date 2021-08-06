@@ -14,19 +14,20 @@ class BlogCategory extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
-    protected $appends = ['formated_created_at'];
+    protected $appends = ['formated_created_at', 'thumb_image_full_path'];
+
     protected $table = 'blog_category';
 
-    
+
     protected static function boot()
-    {    
-        parent::boot();              
-        static::observe(BlogCategoryObserver::class);         
+    {
+        parent::boot();
+        static::observe(BlogCategoryObserver::class);
     }
 
     /*protected static function booted()
-    {      
-        static::deleted(function($topic_category) {                    
+    {
+        static::deleted(function($topic_category) {
             foreach ($topic_category->topics() as $topic) {
                 // delete image of topic
                 $imageName = $topic->image;
@@ -36,12 +37,22 @@ class BlogCategory extends Model
                 DukeSurgeryHelpers::deleteIfFileExist($deleteFileList);
 
                 $topic->guests()->delete();
-                $topic->topicHosts()->delete();            
+                $topic->topicHosts()->delete();
             }
             $topic_category->topics()->delete();
         });
     }*/
-    
+
+    //thumb_image_full_path
+    public function getThumbImageFullPathAttribute()
+    {
+        if (!empty($this->image)) {
+            return Storage::url(config("greenplaces.path.url.blogcategory_image") . "thumb/" . $this->image);
+        }
+
+        return asset('images/blog_default.png');
+    }
+
     //formated_created_at
     public function getFormatedCreatedAtAttribute()
     {
@@ -53,5 +64,5 @@ class BlogCategory extends Model
     }
 
 
-   
+
 }

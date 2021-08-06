@@ -19,6 +19,7 @@ return [
         //http://localhost:8000/storage/app/public/
         "url" => [
             "blog_image" => $uploadsUrlPath."blog_image/",
+            "blogcategory_image" => $uploadsUrlPath."blogcategory_image/",
             "blog_full_image" => $uploadsUrlPath."blog_full_image/",
             "team_image" => $uploadsUrlPath."team_image/",
             "organization_image" => $uploadsUrlPath."organization_image/",
@@ -36,6 +37,7 @@ return [
         // /var/www/html/projectname/storage/
         "doc" => [
             "blog_image" => $uploadsDocPath."blog_image/",
+            "blogcategory_image" => $uploadsDocPath."blogcategory_image/",
             "blog_full_image" => $uploadsDocPath."blog_full_image/",
             "team_image" => $uploadsDocPath."team_image/",
             "organization_image" => $uploadsDocPath."organization_image/",
@@ -49,21 +51,11 @@ return [
             "credibility_image" => $uploadsDocPath."credibility_image/",
         ]
     ],
-    "no_of_sustainable_blog_display_per_page" => 3,
-    "no_of_client_story_display_per_page" => 4,
-    "no_of_organization_display_home_page" => 16,
-    "no_of_pledge_display_certify_page" => 6,
-    "no_of_pledge_display_credibility_home_page" => 6,
-    'recaptcha' => [
-        'sitekey' => env('GOOGLE_RECAPTCHA_SITE_KEY'),
-        'secret' => env('GOOGLE_RECAPTCHA_SECRET_KEY'),
-    ],
-    "no_of_popular_artical_display_per_page" => 3,
-    "artical_id" => 3,
-    "why_certify" => 4,
-    "carbon_calculator_id" => 5,
-    "no_of_latest_artical_display_per_page" => 8, 
-    "carboncalculatorlink" =>  env('APP_URL'),
     "send_notification_to_admin_email" => env('ADMIN_EMAIL_RECEIVE_NOTIFICAITON'),
-   
+    "contact_no" => "+919033752754",
+    "email_id" => "axaymalaviya70@gmail.com",
+    "facebook" => "axaymalaviya70@gmail.com",
+    "instagram" => "axaymalaviya70@gmail.com",
+    "twitter" => "axaymalaviya70@gmail.com",
+
 ];

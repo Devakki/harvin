@@ -18,24 +18,22 @@ class LandingController extends Controller
 {
     public function index(Request $request)
     {
-        $blog_sustainables = Blog::with('category')
-                                ->where('blog_category_id', 1) 
-                                ->limit(config('greenplaces.no_of_sustainable_blog_display_per_page'))
-                                ->get();
 
-        $blog_clients = Blog::with('category')
-                                ->where('blog_category_id', 2) 
-                                ->limit(config('greenplaces.no_of_client_story_display_per_page'))
-                                ->get();
-        
-        $organizations = Organization::where('is_featured', 1) 
-                                        // ->limit(config('greenplaces.no_of_organization_display_home_page'))
-                                        ->get();
-                                
         $credibility_brands = CredibilityBrand::limit(config('greenplaces.no_of_pledge_display_credibility_home_page'))
                                         ->get();
-                                
-        return view("main.landing", compact('blog_sustainables','blog_clients','organizations','credibility_brands'));
+
+        $organization = Organization::limit(20)
+                                        ->get();
+
+        $blogcategory = BlogCategory::limit(20)
+                                        ->get();
+
+        return view("main.landing", compact('credibility_brands','organization','blogcategory'));
+    }
+
+    public function contactus()
+    {
+        return view("main.contact");
     }
 
     public function submitGetNotified(GetNotifiedRequest $request)
@@ -44,14 +42,14 @@ class LandingController extends Controller
         $result['message'] = "Sorry, Something went wrong please try again!";
         $result['code'] = 400;
 
-        try {   
-            $input = $request->only(['email']);   
+        try {
+            $input = $request->only(['email']);
             $isSaved = GetNotified::create($input);
 
-            if( $isSaved ) {                                
+            if( $isSaved ) {
                 $result['message'] = "Thank you. We will contact you as soon as possible!";
-                $result['code'] = 200;                        
-            }                 
+                $result['code'] = 200;
+            }
         } catch (\Exception $e) {
             $result['message'] = $e->getMessage();
             $result['code'] = 400;

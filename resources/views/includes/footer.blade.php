@@ -1,136 +1,84 @@
-<footer class="greenp-footer-bar-wrapper">
-    <div class="container">
-        <div class="greenp-footer-main">                                                                             
+<footer>
+    <div class="footer-top-area gray-bg pt-90 pb-50">
+        <div class="container">
             <div class="row">
-                <div class="col-md-5 col-lg-5">
-                    <a class="greenp-logo-wrapper" href="{{ url('/') }}">
-                        <img src="{{ asset('images/green_places_logo.svg') }}" alt="">
-                    </a>
-                    <div class="greenp-signup-form-main">
-                        <h4>Want to learn more?</h4>
-                        <p>Sign up for our newsletter to keep up with Green Places news and events near you.</p>
-                        <div class="greenp-signup-form">
-                            <form id="get-notified-form">
-                            @csrf
-                                <div class="form-group">
-                                {{ Form::text('email', null, ['id' => 'email', 'class'=>"form-control", 'placeholder' =>"Enter email"]) }} 
-                                @if($errors->has('email'))
-                                    <p class="text-danger">{{ $errors->first('email') }}</p>
-                                @endif
-                                </div>
-                                <button type="submit" id="get-notified-submit-btn" class="greenplace-theme-btn">Sign up</button>
-                            </form>
+                <div class="col-md-3 mb-40">
+                    <div class="footer-widget">
+                        <h4><span>get in touch</span></h4>
+                        <p>Medifine Bibendum auctor, nisi elit consequat ipsum, nec sagittis sem</p>
+                        <div class="contact-widget">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-home"></i><p>Medifine link Ltd, Manhattan 1258, New York, USA Lahore</p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-globe"></i><p><a href="#.">www.Medifine.com</a></p>
+                                </li>
+                                <li>
+                                    <i class="fa fa-mobile"></i><p class="phone-number">(+1) 234 567 8901</p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 offset-lg-1 col-lg-6">
-                    <div class="greenp-page-link-and-social-link">
-                        <div class="social-link">
-                            <h5>Quick Links</h5>
-                            <ul>
-                                <li><a href="javascript:void(0);" data-toggle="modal" data-target="#exampleModalCenter">Carbon  Calculator</a></li>
-                                <li><a href="{{ url('/why-certify') }}">Why Certify?</a></li>
-                                <li><a href="{{ url('/greenplaces-work') }}">Green Places to Work</a></li>
-                                <li><a href="{{ url('/about-us') }}">About us</a></li>
-                                <li><a href="{{ url('/blog') }}">Blog</a></li>
-                            </ul>
+                <div class="col-md-3 mb-40">
+                    <div class="footer-widget">
+                        <h4><span>Medifine link</span></h4>
+                        <ul class="footer-nav list-unstyled clearfix">
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Home</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Doctors</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>About US</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Departments</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Services</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Blog</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Why US</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Medifine Care</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Specilaties</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Timetable</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Events</a></li>
+                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-40">
+                    <div class="footer-widget">
+                        <h4><span>Latest Tweets</span></h4>
+                        <div class="twitter-widget">
+                            <div class="tweet">
+                                <i class="fa fa-twitter"></i>
+                                <p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a href="#.">pixelatic.co.uk.</a>
+                                <span>about a month ago</span>
+                                </p>
+                            </div>
+                            <div class="tweet">
+                                <i class="fa fa-twitter"></i>
+                                <p><a href="#">@Rotography</a> Please kindly use our Support Forum: <a href="#.">pixelatic.co.uk.</a>
+                                <span>about a month ago</span>
+                                </p>
+                            </div>
                         </div>
-                        <div class="social-link">
-                            <h5>Follow us</h5>
-                            <ul>
-                                <li><a target="_blank" href="https://www.facebook.com/Green-Places-110217337948317"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a target="_blank" href="https://twitter.com/GreenPlacesTeam"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a target="_blank" href="https://www.instagram.com/greenplacestowork/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a target="_blank" href="https://www.linkedin.com/company/green-places-to-work/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                <li><a target="_blank" href="https://www.youtube.com/channel/UCM9iCt47eRnXTAm6tCZl01w"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                        <div class="greenplane-towork-logo">
-                            <a href="javascript:void(0);"><img src="{{ asset('images/greenplane-towork-logo.svg') }}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-40">
+                    <div class="footer-widget">
+                        <h4><span>newsletter</span></h4>
+                        <div class="newsletter clearfix">
+                            <i class="fa fa-envelope"></i>
+                            <p class="newsletter-text">Sign up with your name and email to get updates fresh updates.</p>
+                            <form action="#">
+                                <input type="text" placeholder="Your Name" />
+                                <input type="email" placeholder="Your Email" />
+                                <button class="btn">Subscribe</button>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="greenp-copy-rights-footer-bar">
+    <div class="copyright-area theme-bg">
         <div class="container">
-            <ul class="greenp-footer-link">
-                <li><a href="javascript:void(0);">© 2021 Green Places.</a> All rights reserved.</li>
-                <li><a href="javascript:void(0);">Legal</a></li>
-                <li><a href="{{ url('policy') }}">Privacy Policy</a></li>
-                <li><a href="{{ url('terms') }}">Terms & Conditions</a></li>
-            </ul>
+            <p class="copyright text-center">Copyright &copy; 2017 Medifine. All right reserved.</p>
         </div>
     </div>
 </footer>
-
-@include("calculate.carbon")
-
-@push('scripts')    
-
-
-<script src="{{ asset('custom/carboncalculator.js') }} "></script>
-<link href="{{ asset('plugins/select2/select2.min.css') }}" rel="stylesheet" />
-<script src="{{ asset('plugins/select2/select2.full.min.js') }}"></script>
-<script src="{{ asset('plugins/bootstrap-autocomplete/bootstrap-autocomplete.min.js') }}"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-H2NGTP0D64"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-H2NGTP0D64');
-</script>
-    <script type="text/javascript">
-
-        $(document).ready(function(){
-
-            var footerGetNotifedFormValidate = $("#get-notified-form").validate({
-                rules: {
-                    email: {
-                        required: true,
-                        email: true
-                    },                  
-                }
-            });
-            
-             // submit get-notified form
-            $(document).on("click", "#get-notified-submit-btn", function(event) {
-                event.preventDefault();
-                if($("#get-notified-form").valid()) {
-                    $("#get-notified-submit-btn").attr("disabled", true).html("Wait");
-                    $("#get-notified-form").find( "input" ).blur();
-                    $.ajax({
-                        url: "{{ url('get-notified') }}",
-                        type: "POST",
-                        data: $('#get-notified-form').serialize(),
-                        success: function(data){
-                            $('#get-notified-form').trigger("reset");
-                            footerGetNotifedFormValidate.resetForm();                            
-                            $("#get-notified-submit-btn").attr("disabled", false).html("Submit");
-                           fnToastSuccess(data.message);
-                        },
-                        error: function (xhr, status, error) {
-                            isProcessing = false;
-                            $("#get-notified-submit-btn").attr("disabled", false).html("Submit");
-                            if(xhr.status == 422) {
-                                var error = xhr.responseJSON.errors || "";
-                                $.each(error, function(i, item) {
-                                    fnToastError(error[i]);
-                                })
-                            } else {
-                                ajaxError(xhr, status, error);
-                            }
-                        }
-                    });
-                }
-                return false;
-            });
-
-        });
-
-        // https://twitter.com/uixmat
-
-        </script>
-@endpush

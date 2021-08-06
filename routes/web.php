@@ -30,12 +30,13 @@ Route::get('/blog/tag/{tag_slug}', [BlogController::class, 'tagBlogListing']);
 Route::get('/why-certify', [CertifyController::class, 'index']);
 Route::get('/greenplaces-work', [GreenplaceWorkController::class, 'index']);
 Route::get('/about-us', [AboutusController::class, 'index']);
-Route::get('/greenplaces-work/datatable', [GreenplaceWorkController::class, 'getDatatable']);	
+Route::get('/greenplaces-work/datatable', [GreenplaceWorkController::class, 'getDatatable']);
 Route::get('/greenplaces-work/{company_slug}', [GreenplaceWorkController::class, 'companydetail']);
 Route::get('/badgecode/{company_slug}', [GreenplaceWorkController::class, 'badgeDetail']);
 
 Route::get('/pledge/{pledge_slug}', [PledgeController::class, 'pledgeDetail']);
 Route::get('/get_carbon_slug', [LandingController::class, 'getblogslug']);
+Route::get('/contact-us', [LandingController::class, 'contactus']);
 
 Route::get('/terms', function () {
     return view('main/terms');

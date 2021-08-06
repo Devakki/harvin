@@ -32,8 +32,8 @@
     <!-- favicon icon -->
 
     <!-- Styles -->
-    <link href="{{asset("fonts/stylesheet.css")}}" rel="stylesheet" type="text/css">
-    <link href="{{ asset('css/admin-add.css') . "?v=". env("APP_CSS_VERSION", 1) }} " rel="stylesheet">
+    <link href="{{asset("fonts-old/stylesheet.css")}}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css-old/admin-add.css') . "?v=". env("APP_CSS_VERSION", 1) }} " rel="stylesheet">
     <!-- Admin theme Css Files -->
     <link href="{{ asset('admin-theme/css/classic.css') }}" rel="stylesheet">
     <link href="{{ asset('admin-theme/css/admin-style.css') }}" rel="stylesheet">

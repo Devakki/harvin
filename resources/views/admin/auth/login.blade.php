@@ -17,7 +17,7 @@
             <div class="card">
                 <div class="card-body">
                     <div class="m-sm-4">
-                    
+
                         <div class="text-center">
                             <img src="{{ asset("images/green_places_logo01.svg") }}" alt="Green Places" class="img-fluid " width="132" height="132" />
                         </div>

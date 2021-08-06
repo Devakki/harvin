@@ -30,10 +30,12 @@ class BlogCategoryRequest extends FormRequest
                 "required",
                 "max:255",
                 Rule::unique('blog_category')->ignore($this->blog_category),
-            ], 
-     
+            ],
+            'short_description' => 'nullable',
+            'long_description' => 'nullable',
+            'image' => 'nullable | mimes:jpeg,jpg,png | max:2048',
         ];
-            
+
         return $result;
     }
 }
