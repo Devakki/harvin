@@ -26,7 +26,7 @@
 						<div class="display-table">
 							<div class="table-cell">
 								<div class="slider-text text-animation">
-									<h2>Get your free Health treatment</h2>
+									<h2>We manufacturing pharma products</h2>
 									<p>It has survived not only five centuries, but also the leap <br /> into electronic typesetting, remaining</p>
 									<a class="btn" href="#">Learn More</a>
 									<a class="btn btn-black" href="#">Appointment</a>
@@ -48,7 +48,7 @@
 					<h2>Welcome to <span>HARVIN PHARMACEUTICALS</span></h2>
 					<p>Established as a Proprietor firm in the year 2018, we “Harvin Pharmaceuticals” are a leading Manufacturer of a wide range of Medicated Soap, Pharmaceuticals Lotions, Dusting Powder, etc. Situated in Ahmedabad (Gujarat, India), we have constructed a wide and well functional infrastructural unit that plays an important role in the growth of our company. We offer these products at reasonable rates and deliver these within the promised time-frame. In addition to this, we are also involved in offering best-in-class PCD Pharma Franchise and Pharmaceutical Third Party Manufacturing to our esteemed clients. Under the headship of “Mr. Sanjay Bhalgamadiya” (Marketing Executive), we have gained a huge clientele across the nation.
 
-                        </p>
+                    </p>
 				</div>
 
 			</div>
@@ -227,7 +227,10 @@
 		<div class="appointment-area bg-2">
 			<div class="container-fluid">
 				<div class="row">
-					<div class="col-sm-6 col-sm-offset-6 no-gutter">
+					<div class="col-sm-6">
+                        <img style="width:100%" src="{{ asset('images/landing-1.jpeg') }}" alt="" />
+                    </div>
+					<div class="col-sm-6">
 						<div class="quick-appointment-form">
 							<h3>Inquiry</h3>
 							<p class="text-muted">Behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>

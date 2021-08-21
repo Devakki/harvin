@@ -17,7 +17,7 @@
 @section('content')
 <div class="basic-breadcrumb-area bg-opacity bg-1 ptb-100">
     <div class="container">
-        <div class="basic-breadcrumb text-left">
+        <div class="basic-breadcrumb  text-center">
             <h3 class="">About us</h3>
             <ol class="breadcrumb text-xs">
                 <li><a href="index.html">Home</a></li>
@@ -32,35 +32,12 @@
 <div class="about-area pt-90 pb-60">
     <div class="container">
         <div class="area-title text-center">
-            <h2>Welcome to <span>Medifine</span></h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora veritatis nemo aut ea iusto eos est expedita, quas ab adipisci.</p>
+            <h2>Welcome to <span>HARVIN PHARMACEUTICALS</span></h2>
+            <p>Established as a Proprietor firm in the year 2018, we “Harvin Pharmaceuticals” are a leading Manufacturer of a wide range of Medicated Soap, Pharmaceuticals Lotions, Dusting Powder, etc. Situated in Ahmedabad (Gujarat, India), we have constructed a wide and well functional infrastructural unit that plays an important role in the growth of our company. We offer these products at reasonable rates and deliver these within the promised time-frame. In addition to this, we are also involved in offering best-in-class PCD Pharma Franchise and Pharmaceutical Third Party Manufacturing to our esteemed clients. Under the headship of “Mr. Sanjay Bhalgamadiya” (Marketing Executive), we have gained a huge clientele across the nation.
+
+            </p>
         </div>
-        <div class="row">
-            <div class="col-md-4 mb-30">
-                <div class="features-box border-box text-center">
-                    <i class="fa fa-ambulance" aria-hidden="true"></i>
-                    <h3>easy appointments</h3>
-                    <p>Behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    <a class="btn" href="#">Learn More</a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-30">
-                <div class="features-box border-box text-center">
-                    <i class="fa fa-stethoscope" aria-hidden="true"></i>
-                    <h3>Best Doctor</h3>
-                    <p>Behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    <a class="btn" href="#">Learn More</a>
-                </div>
-            </div>
-            <div class="col-md-4 mb-30">
-                <div class="features-box border-box text-center">
-                    <i class="fa fa-medkit" aria-hidden="true"></i>
-                    <h3>High Quality Service</h3>
-                    <p>Behind the word mountains, far from the countries Vokalia and Consonantia.</p>
-                    <a class="btn" href="#">Learn More</a>
-                </div>
-            </div>
-        </div>
+
     </div>
 </div>
 <!-- about-area end -->
@@ -160,7 +137,7 @@
 <div class="team-area pt-90 pb-60 ">
     <div class="container">
         <div class="area-title text-center">
-            <h2>Our Doctors</h2>
+            <h2>Our Team</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora veritatis nemo aut ea iusto eos est expedita, quas ab adipisci.</p>
         </div>
         <div class="row">
@@ -252,163 +229,7 @@
     </div>
 </div>
 <!-- team-area start -->
-<div class="suggestions-area gray-bg pt-90 pb-60">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7 mb-30">
-                <div class="area-title2">
-                    <h2>Suggestions</h2>
-                    <p>Top tips from doctors</p>
-                </div>
 
-              <!-- Nav tabs -->
-              <div class="tabs-menu">
-                <ul class="custom-tab" role="tablist">
-                    <li role="presentation" class="active"><a href="#home-tab"  role="tab" data-toggle="tab">Teeth</a></li>
-                    <li role="presentation"><a href="#oral-exam"  role="tab" data-toggle="tab">Cardio</a></li>
-                    <li role="presentation"><a href="#neurology"  role="tab" data-toggle="tab">Neurology</a></li>
-                    <li role="presentation"><a href="#settings"  role="tab" data-toggle="tab">Pregnacy</a></li>
-                </ul>
-              </div>
-
-              <!-- Tab panes -->
-              <div class="tab-content suggestions">
-                <div role="tabpanel" class="tab-pane fade in active" id="home-tab">
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br>
-                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        <a href="#" class="btn border small">Read More</a>
-                    </div>
-
-                    <div class="image">
-                        <img src="img/team/profile-1.jpg" alt="">
-                        <p class="name">Milan Markovic</p>
-                        <p class="spec">General Dentist</p>
-                    </div>
-
-                    <span class="clearfix"></span>
-                </div>
-
-                <div role="tabpanel" class="tab-pane fade" id="oral-exam">
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br>
-                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        <a href="#" class="btn border small">Read More</a>
-                    </div>
-
-                    <div class="image">
-                        <img src="img/team/profile-2.jpg" alt="">
-                        <p class="name">Milan Markovic</p>
-                        <p class="spec">General Dentist</p>
-                    </div>
-
-                    <span class="clearfix"></span>
-                </div>
-
-                <div role="tabpanel" class="tab-pane fade" id="neurology">
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br>
-                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        <a href="#" class="btn border small">Read More</a>
-                    </div>
-
-                    <div class="image">
-                        <img src="img/team/profile-3.jpg" alt="">
-                        <p class="name">Milan Markovic</p>
-                        <p class="spec">General Dentist</p>
-                    </div>
-
-                    <span class="clearfix"></span>
-                </div>
-
-                <div role="tabpanel" class="tab-pane fade" id="settings">
-                    <div class="content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p><br>
-                        <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                        <a href="#" class="btn border small">Read More</a>
-                    </div>
-
-                    <div class="image">
-                        <img src="img/team/profile-1.jpg" alt="">
-                        <p class="name">Milan Markovic</p>
-                        <p class="spec">General Dentist</p>
-                    </div>
-
-                    <span class="clearfix"></span>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-5 mb-30">
-                <div class="area-title2">
-                    <h2>FAQ</h2>
-                    <p>Fast answers questions</p>
-                </div>
-
-                 <div class="panel-group" id="accordion">
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1"><i class="fa fa-heartbeat" aria-hidden="true"></i>Cardio health</a>
-                          </h4>
-                        </div>
-
-                        <div id="collapse1" class="panel-collapse collapse in">
-                          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat.</div>
-                        </div>
-                      </div>
-
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"><i class="fa fa-medkit" aria-hidden="true"></i>Teeth whitening</a>
-                          </h4>
-                        </div>
-
-                        <div id="collapse2" class="panel-collapse collapse">
-                          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat.</div>
-                        </div>
-                      </div>
-
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"><i class="fa fa-user-md" aria-hidden="true"></i>Oral exams</a>
-                          </h4>
-                        </div>
-
-                        <div id="collapse3" class="panel-collapse collapse">
-                          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat.</div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default">
-                        <div class="panel-heading">
-                          <h4 class="panel-title">
-                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4"><i class="fa fa-user-md" aria-hidden="true"></i>Dental exams</a>
-                          </h4>
-                        </div>
-
-                        <div id="collapse4" class="panel-collapse collapse">
-                          <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                          minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                          commodo consequat.</div>
-                        </div>
-                      </div>
-
-                  </div>
-            </div>
-        </div>
-    </div>
-</div>
 <!-- clients-area start -->
 <div class="clients-area ptb-40">
     <div class="container">

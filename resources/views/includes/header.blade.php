@@ -33,11 +33,11 @@
                         <nav style="    margin: 12px 0;">
                             <ul class="basic-menu">
 
-                                <li><a href="about.html">Home</a></li>
+                                <li><a href="{{ url('/') }}">Home</a></li>
                                 <li><a href="{{ url('/about-us') }}">about us</a></li>
                                 <li><a href="{{ url('/blog') }}">Product</a></li>
                                 <li><a href="#">Download Broucher</a></li>
-                                <li><a href="contact.html">Pledge</a></li>
+                                <li><a href="{{ url('/why-certify') }}">Pledge</a></li>
                                 <li><a href="{{ url('/contact-us') }}">contact us</a></li>
                             </ul>
                         </nav>

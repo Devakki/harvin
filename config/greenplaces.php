@@ -57,5 +57,7 @@ return [
     "facebook" => "axaymalaviya70@gmail.com",
     "instagram" => "axaymalaviya70@gmail.com",
     "twitter" => "axaymalaviya70@gmail.com",
+    "address" => "H-52, Prarthana Bunglow, 6, Vasant Nagar, Ognaj, Ahmedabad, Gujarat 382481",
+    "contact_no" => "+919033752754",
 
 ];

@@ -9,13 +9,13 @@
                         <div class="contact-widget">
                             <ul>
                                 <li>
-                                    <i class="fa fa-home"></i><p>Medifine link Ltd, Manhattan 1258, New York, USA Lahore</p>
+                                    <i class="fa fa-home"></i><p><?php echo config('greenplaces.address')  ?></p>
                                 </li>
                                 <li>
-                                    <i class="fa fa-globe"></i><p><a href="#.">www.Medifine.com</a></p>
+                                    <i class="fa fa-globe"></i><p><a href="#.">www.harvinpharmaceutical.com</a></p>
                                 </li>
                                 <li>
-                                    <i class="fa fa-mobile"></i><p class="phone-number">(+1) 234 567 8901</p>
+                                    <i class="fa fa-mobile"></i><p class="phone-number"><?php echo config('greenplaces.contact_no')  ?></p>
                                 </li>
                             </ul>
                         </div>
@@ -23,19 +23,13 @@
                 </div>
                 <div class="col-md-3 mb-40">
                     <div class="footer-widget">
-                        <h4><span>Medifine link</span></h4>
+                        <h4><span>Harvin link</span></h4>
                         <ul class="footer-nav list-unstyled clearfix">
                             <li><a href="#."><i class="fa fa-long-arrow-right"></i>Home</a></li>
-                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Doctors</a></li>
                             <li><a href="#."><i class="fa fa-long-arrow-right"></i>About US</a></li>
-                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Departments</a></li>
                             <li><a href="#."><i class="fa fa-long-arrow-right"></i>Services</a></li>
                             <li><a href="#."><i class="fa fa-long-arrow-right"></i>Blog</a></li>
                             <li><a href="#."><i class="fa fa-long-arrow-right"></i>Why US</a></li>
-                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Medifine Care</a></li>
-                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Specilaties</a></li>
-                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Timetable</a></li>
-                            <li><a href="#."><i class="fa fa-long-arrow-right"></i>Events</a></li>
                             <li><a href="#."><i class="fa fa-long-arrow-right"></i>Contact Us</a></li>
                         </ul>
                     </div>

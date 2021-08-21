@@ -1,4 +1,4 @@
-@push("styles") 
+@push("styles")
     <link href="{{ asset('plugins/datetimepicker/bootstrap-datetimepicker.min.css') }}" rel="stylesheet">
     <link href="{{ asset('plugins/summernote/summernote.min.css') }}" rel="stylesheet">
 @endpush
@@ -21,7 +21,7 @@
             <p class="text-danger">{{ $errors->first('hashtags') }}</p>
         @endif
     </div>
-</div> 
+</div>
 
 <div class="form-group row">
     <div class="col-sm-6">
@@ -68,15 +68,15 @@
         <label for="image">Image</label>
         <div class="choose-file-box">
             {{ Form::file('image', ['id' => 'image', 'class'=>"image mb-2 mt-2", "accept" => ".png, .jpg, .jpeg"]) }}
-        </div>          
-        <input type="hidden" name="cropped_image" id="cropped_image" value="" style="display:none" />         
+        </div>
+        <input type="hidden" name="cropped_image" id="cropped_image" value="" style="display:none" />
         @if($errors->has('image'))
             <p class="text-danger">{{ $errors->first('image') }}</p>
         @endif
         <p id="displayImageValidationError" class="d-none text-danger text-center">Please upload either a JPG, JPEG or PNG</p>
     </div>
 </div>
- 
+
 <div class="form-group img-crop-block-main">
     <div class="">
         @if(isset($result) && $result->image)
@@ -100,32 +100,15 @@
         <label for="image">Full Image</label>
         <div class="choose-file-box">
             {{ Form::file('full_image', ['id' => 'full_image', 'class'=>"image mb-2 mt-2", "accept" => ".png, .jpg, .jpeg"]) }}
-        </div>          
-        <input type="hidden" name="cropped_full_image" id="cropped_full_image" value="" style="display:none" />         
+        </div>
+        <input type="hidden" name="cropped_full_image" id="cropped_full_image" value="" style="display:none" />
         @if($errors->has('full_image'))
             <p class="text-danger">{{ $errors->first('full_image') }}</p>
         @endif
         <p id="displayFullImageValidationError" class="d-none text-danger text-center">Please upload either a JPG, JPEG or PNG</p>
     </div>
 </div>
- 
-<div class="form-group img-crop-block-main">
-    <div class="">
-        @if(isset($result) && $result->full_image)
-            <div id="preview-crop-full-image" style="width: 380px !important; height: 196px !important;" class="dukesurgery-preview-crop-image-block">
-                <img src="{{ $result->thumb_detail_image_full_path }}" class="img-thumbnail">
-            </div>
-        @else
-            <div id="preview-crop-full-image" style="width: 380px !important; height: 196px !important; display: none;" class="dukesurgery-preview-crop-image-block">
-                <img src="" class="full-img-thumbnail" style="display: none;">
-            </div>
-        @endif
-    </div>
-    <div class="col-sm-6 crop-full-img-section" style="display: none;">
-        <div id="upload-demo-full-image"></div>
-        <button class="dukesurgery-themes-btns-main upload-full-image">Crop Image</button>
-    </div>
-</div>
+
 
 <div class="form-group row">
     <div class="col-sm-6 duke-featured-topic">
@@ -212,7 +195,7 @@
        $('.select2').select2({
              allowClear: true,
        });
-       
+
         $('#hashtags').select2({
             // allowClear: true,
             tags: true,
@@ -237,7 +220,7 @@
             return this.optional(element) || (element.files[0].size <= param)
         });//, 'File size must be less than {0} bytes'
 
-        
+
         $("#form_validate").validate({
             ignore: [],
             errorElement: 'p',
@@ -245,7 +228,7 @@
             normalizer: function( value ) {
                 return $.trim( value );
             },
-            rules: {                 
+            rules: {
                 blog_category_id: {
                     required: true
                 },
@@ -262,7 +245,7 @@
                 },
                 long_description: {
                     /*required: true*/
-                },                
+                },
                 image: {
                     /*required: {{ (isset($result)) ? "false" : "true" }},*/
                     accept: "image/*",
@@ -271,7 +254,7 @@
                 full_image: {
                     accept: "image/*",
                     filesize: 2000000,
-                },                                               
+                },
             },
             messages:{
                 image:{
@@ -283,7 +266,7 @@
             },
             errorPlacement: function(error, element) {
                 if ( element.attr("id") == "blog_category_id" || element.attr("id") == "hosts") {
-                    error.appendTo($(element).closest('.col-sm-6'));                     
+                    error.appendTo($(element).closest('.col-sm-6'));
                 } else {
                     error.insertAfter(element);
                 }
@@ -428,7 +411,7 @@
            return false;
        });
 
-       
+
     });
 </script>
 
